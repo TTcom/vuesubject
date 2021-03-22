@@ -35,6 +35,13 @@ module.exports = {
         // ['slideTransition', '页面切换动画'],
         // ['vue_principle', 'principle']
       ],
+      '/js/': [
+        {
+          title: 'JS',
+          collapsable: true,
+        },
+        ['', 'js']
+      ],
     },
     sidebarDepth: 23
 

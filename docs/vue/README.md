@@ -90,8 +90,11 @@ vue.mixin的作用就是抽离公共的业务逻辑，原理类似对象的继�
 ```
 ## nextTick的使用场景和原理
 ```js
-
-
+nextTick中的回调是在下次DOM更新循环结束之后执行的延迟回调，在修改数据后
+立即使用这个方法获取更新后的DOM，原理就是使用异步方法（promise,mutationObserver,setimmediate,setTimeout）经常会和事件循环一起来问（宏任务和微任务）
+```
+## 为什么需要虚拟DOM
+```js
+     virtual dom 就是用js对象来描述真实的DOM，因为直接操作DOM性能会非常低，但是通过js层操作效率高，可以将DOM操作转化为对象操作，最终通过diff算法对比差异进行更新DOM 
 
 ```
-
